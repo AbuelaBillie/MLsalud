@@ -18,11 +18,9 @@
   font-weight: 400;
   color: var(--black);
 }
-
 ul {
   list-style: none;
 }
-
 a {
   text-decoration: none;
 }
@@ -107,14 +105,9 @@ header nav svg {
   margin: 1rem;
 }
 .intro h2 {
-  font-weight: 700;
   margin-bottom: 1rem;
   text-transform: uppercase;
   text-align: center;
-  background: #afaaaa;
-  background: linear-gradient(to top, #afaaaa 0%, #726868 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 .intro ul li {
   display: flex;
@@ -147,13 +140,8 @@ header nav svg {
   text-align: center;
 }
 .conocenos h2 {
-  font-weight: 700;
   margin-bottom: 1rem;
   text-transform: uppercase;
-  background: #afaaaa;
-background: linear-gradient(to top, #afaaaa 0%, #726868 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
 }
 /*FIN SECTION CONOCENOS*/
 
@@ -167,13 +155,8 @@ background: linear-gradient(to top, #afaaaa 0%, #726868 100%);
   margin: 1rem;
 }
 .eleginos h2 {
-  font-weight: 700;
   margin-bottom: 1rem;
   text-transform: uppercase;
-  background: #afaaaa;
-background: linear-gradient(to top, #afaaaa 0%, #726868 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
 }
 .eleginos ul li {
   display: flex;
@@ -203,22 +186,11 @@ background: linear-gradient(to top, #afaaaa 0%, #726868 100%);
   border-radius: 10%;
 }
 .servicios h2 {
-  font-weight: 700;
   margin-bottom: 1rem;
   text-transform: uppercase;
-  background: #afaaaa;
-background: linear-gradient(to top, #afaaaa 0%, #726868 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
 }
-.servicios ul li {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  margin: 0.5rem auto;
-}
-.servicios ul li h3 {
-  margin-left: 0.5rem;
+.servicios ul{
+    list-style-type: disc;
 }
 /*FIN SECTION SERVICIOS*/
 
@@ -251,7 +223,7 @@ footer .redes-sociales {
 footer .redes-sociales svg {
   height: 2.5rem;
   width: 2.5rem;
-  margin: 0.3rem;
+  margin: 0.6rem;
   fill: var(--lightgray);
 }
 footer .creditos {
@@ -265,6 +237,30 @@ footer .creditos p {
   font-size: 0.9rem;
 }
 /*END FOOTER*/
+
+/*WA-ME*/
+.wa-me{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: #25D366;
+    padding: .5rem;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wa-me a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wa-me svg{
+    height: 3rem;
+    width: 3rem;
+    fill:var(--lightgray);
+}
+/*END WA-ME*/
 
 /*ANIMACIONES*/
 .slide-in-left {
