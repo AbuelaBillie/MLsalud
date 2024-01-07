@@ -189,8 +189,8 @@ header nav svg {
   margin-bottom: 1rem;
   text-transform: uppercase;
 }
-.servicios ul{
-    list-style-type: disc;
+.servicios ul {
+  list-style-type: disc;
 }
 /*FIN SECTION SERVICIOS*/
 
@@ -239,56 +239,134 @@ footer .creditos p {
 /*END FOOTER*/
 
 /*WA-ME*/
-.wa-me{
-    position: fixed;
-    bottom: 1rem;
-    right: 1rem;
-    background-color: #25D366;
-    padding: .5rem;
-    border-radius: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.wa-me {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: #25d366;
+  padding: 0.5rem;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.wa-me a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.wa-me a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.wa-me svg{
-    height: 3rem;
-    width: 3rem;
-    fill:var(--lightgray);
+.wa-me svg {
+  height: 3rem;
+  width: 3rem;
+  fill: var(--lightgray);
 }
 /*END WA-ME*/
 
 /*ANIMACIONES*/
 .slide-in-left {
-	-webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.slide-in-right {
+  -webkit-animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 @-webkit-keyframes slide-in-left {
-    0% {
-      -webkit-transform: translateX(-1000px);
-              transform: translateX(-1000px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-      opacity: 1;
-    }
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0;
   }
-  @keyframes slide-in-left {
-    0% {
-      -webkit-transform: translateX(-1000px);
-              transform: translateX(-1000px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-      opacity: 1;
-    }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
   }
+}
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 /*END ANIMACIONES*/
+
+
+@media (min-width:481px)  { 
+  .conocenos, .eleginos, .servicios{
+    width: 60%;
+    margin: 2rem auto;
+  }
+  footer{
+    margin-top: 2rem;
+  }
+}
+
+@media (min-width:1025px) {
+  .hero .hero-info {
+    height: 30rem;
+    width: 50%;
+  }
+
+  .hero .hero-video-overlay {
+    height: 40rem;
+  }
+  .hero .hero-video {
+    height: 40rem;
+  }
+  .intro ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  .intro ul li{
+    margin: 1rem;
+    width:10rem;
+  }
+  .conocenos{
+    width: 100%;
+    border-radius: 0;
+    padding: 3% 30%;
+  }
+  .eleginos ul li{
+    width: 20rem;
+  }
+  .servicios{
+    width: 100%;
+    border-radius: 0;
+    padding: 3% 30%;
+  }
+}
